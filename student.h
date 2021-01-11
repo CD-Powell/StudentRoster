@@ -16,7 +16,7 @@ public:
 	string last;					    //Student's last name
 	string email;					   //Student's email address
 	double age;						  //Student's current age
-	double days[numDaysArraySize];	 //Array of number of days to complete each course for current term
+	int days[numDaysArraySize];	 //Array of number of days to complete each course for current term
 	DegreeProgram degreeName;		//Name of student's declared degree program
 
 	Student();		 /* Parameterless constructor for Student class setting Student to default values */
@@ -25,8 +25,8 @@ public:
 		string first,
 		string last,
 		string email,
-		double age,
-		double days[],
+		int age,
+		int days[],
 		DegreeProgram degreeName);	/* End of full constructor */
 	~Student();	 /* Destructor */
 
@@ -35,8 +35,8 @@ public:
 	string getFirst();
 	string getLast();
 	string getEmail();
-	double getAge();
-	double* getDays();
+	int getAge();
+	int* getDays();
 	DegreeProgram getDegreeName();
 
 	/* Setters (Mutators) */
@@ -44,8 +44,8 @@ public:
 	void setFirst(string first);
 	void setLast(string last);
 	void setEmail(string email);
-	void setAge(double age);
-	void setDays(double days[]);
+	void setAge(int age);
+	void setDays(int days[]);
 	void setDegreeName(DegreeProgram dn);
 
 	static void printHeader(); /* Displays a header for the data to follow below it to be identified */
